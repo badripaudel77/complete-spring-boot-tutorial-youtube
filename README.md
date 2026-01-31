@@ -2,6 +2,8 @@
 
 Welcome to the **complete-spring-boot-tutorial** with REST API development project from scratch! This is a comprehensive Spring Boot demonstration application designed to showcase modern Java development practices. It implements a REST-ful API featuring a real-world example of a **Posts** and **Comments**.
 
+Youtube Link : https://www.youtube.com/watch?v=T7_ZxTr-EQQ
+
 ## 🚀 Key Features
 
 *   **REST API**: API development for `Post` and `Comment` resources with associations / mappings.
