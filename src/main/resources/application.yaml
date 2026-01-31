@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: sb-yt-tutorial
+
+  # change these connections if you're using other database.
+  # make sure you create database before connecting.
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/yt_sb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+ # This is for dynamic versioning (spring boot >= 4.0.*)
+  mvc:
+    apiversion:
+      use:
+        path-segment: 1
+logging:
+  level:
+    org.hibernate.sql: debug
+    root: info

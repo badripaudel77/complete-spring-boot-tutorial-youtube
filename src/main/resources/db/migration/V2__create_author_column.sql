@@ -1,0 +1,1 @@
+alter table posts add column author varchar(255);
